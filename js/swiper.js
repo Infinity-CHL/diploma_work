@@ -78,4 +78,13 @@ let editionSlider = new Swiper(".editions__right", {
     nextEl: ".editions__btn--next",
     prevEl: ".editions__btn--prev"
   }
-})
+});
+
+let projectsSlider = new Swiper(".projects__swiper", {
+  slidesPerView: 3,
+  spaceBetween: 50,
+  navigation: {
+    nextEl: ".projects__swiper-btn--next",
+    prevEl: ".projects__swiper-btn--prev"
+  }
+});
