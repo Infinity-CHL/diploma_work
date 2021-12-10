@@ -521,13 +521,13 @@ a {
 }
 
 .catalog__title {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .catalog__nav {
   position: absolute;
-  top: 90px;
-  left: 210px;
+  top: 95px;
+  left: 222px;
 }
 
 .catalog__list {
@@ -574,7 +574,7 @@ a {
 
 .catalog__descr {
   max-width: var(--descr__max-width);
-  margin-bottom: 50px;
+  margin-bottom: 39px;
   font-size: 16px;
   line-height: 2;
   font-weight: 400;
@@ -591,11 +591,11 @@ a {
 
 .content-left__img {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .content-left__title {
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   font-size: 24px;
   line-height: 33px;
   font-weight: 600;
@@ -603,7 +603,7 @@ a {
 
 .content-left__subtitle {
   display: inline-block;
-  margin-bottom: 12px;
+  margin-bottom: 7px;
   font-size: 12px;
   color: #999;
 }
@@ -619,8 +619,8 @@ a {
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-top: 41px;
-  padding-bottom: 41px;
+  padding-top: 34px;
+  padding-bottom: 32px;
 }
 
 .ui-corner-all,
@@ -709,12 +709,12 @@ a {
 /* EVENT */
 
 .event {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 68px;
+  padding-bottom: 76px;
 }
 
 .event__title {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .event__list {
@@ -741,7 +741,7 @@ a {
 
 .event-content {
   height: 100%;
-  padding: 13px 19px 43px 50px;
+  padding: 16px 19px 38px 50px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -763,7 +763,7 @@ a {
 }
 
 .event-content__title {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   font-size: 24px;
   line-height: 33px;
   font-weight: 600;
@@ -800,7 +800,7 @@ a {
 }
 
 .editions {
-  padding: 80px 0 80px 0;
+  padding: 80px 0 77px 0;
   color: var(--color__white);
 }
 
@@ -815,26 +815,37 @@ a {
 }
 
 .editions__left {
+  margin-top: -15px;
   max-width: 277px;
   display: flex;
   flex-direction: column;
 }
 
 .editions__right {
-  max-width: 1200px;
+  max-width: 1150px;
   width: 100%;
   overflow: hidden;
 }
 
 .editions__btns {
   position: absolute;
-  bottom: 100%;
+  bottom: 105.5%;
   display: flex;
+  align-items: center;
+  min-width: 130px;
 }
 
 .editions__btn--prev,
 .edtitons__btn--next {
   position: static;
+}
+
+.editions__btn--prev {
+  margin-right: 25px;
+}
+
+.swiper-pagination-fraction {
+  width: 36%;
 }
 
 .editions__right .swiper-slide {
@@ -843,7 +854,6 @@ a {
 }
 
 .editions__subtitle {
-  margin-bottom: 9px;
   font-size: 16px;
   line-height: 2;
   font-weight: 700;
@@ -852,7 +862,7 @@ a {
 .editions__list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .editions__list-item {
@@ -860,10 +870,6 @@ a {
   font-size: 16px;
   line-height: 2;
   font-weight: 400;
-}
-
-.editions__list-item:not(:last-child) {
-  margin-bottom: 5px;
 }
 
 .editions__checkbox {
@@ -917,10 +923,14 @@ a {
   background: #c283f3;
 }
 
+.editions__subtitle-price {
+  margin-bottom: 7px;
+}
+
 .editions__price-input {
   max-width: 73px;
   margin-right: 10px;
-  padding: 4px 0 7px 10px;
+  padding: 4px 0 2px 13px;
   border: none;
   background: rgba(157, 92, 208, 0.5);
   color: var(--color__white);
@@ -935,6 +945,10 @@ a {
   border-radius: 6px;
 }
 
+.editions__price label:first-child {
+  margin-right: 2px;
+}
+
 .editions-card {
   display: flex;
   flex-direction: column;
@@ -942,18 +956,21 @@ a {
 
 .editions-card__title {
   width: 150px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .editions-card__img {
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 }
 
 .editions-card__bottom {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 16px;
   line-height: 22px;
 }
@@ -962,10 +979,11 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  font-style: italic;
 }
 
 .editions-card__btn {
-  padding: 8px 14px;
+  padding: 8px 20px;
   align-self: flex-start;
   background: none;
   border: 1px solid var(--accent__color);
@@ -982,12 +1000,12 @@ a {
 }
 
 .projects__title {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .projects__descr {
   max-width: var(--descr__max-width);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 2;
 }
