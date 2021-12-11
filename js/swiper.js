@@ -80,11 +80,39 @@ let editionSlider = new Swiper(".editions__right", {
   }
 });
 
-let projectsSlider = new Swiper(".projects__swiper", {
+// Projects swiper 
+
+let projectsSwiper = new Swiper(".projects__swiper", {
   slidesPerView: 3,
+  slidesPerGroup: 1,
   spaceBetween: 50,
   navigation: {
-    nextEl: ".projects__swiper-btn--next",
-    prevEl: ".projects__swiper-btn--prev"
+    nextEl: ".projects__swiper-btn-next",
+    prevEl: ".projects__swiper-btn-next"
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+    },
+    576: {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      spaceBetween: 15,
+    },
+    1200: {
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      spaceBetween: 50,
+    }
+
+  },
+
+  a11y: {
+    prevSlideMessage: 'Предыдущий',
+    nextSlideMessage: 'Следующий',
   }
+
 });

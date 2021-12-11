@@ -641,7 +641,7 @@ a {
   border-bottom: 1px solid #cacaca;
 }
 
-.catalog-content__accordion-top:first-child {
+.catalog-content__item:first-child .catalog-content__accordion-top {
   border-top: 1px solid #cacaca;
 }
 
@@ -997,6 +997,7 @@ a {
 
 .projects {
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .projects__title {
@@ -1011,7 +1012,7 @@ a {
 }
 
 .projects__subtitle {
-  margin-bottom: 23px;
+  margin-bottom: 5px;
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
@@ -1069,17 +1070,26 @@ a {
 }
 
 .projects__swiper {
+  position: relative;
+  overflow: hidden;
   padding: 0 75px;
 }
 
-.projects__swiper .swiper-wrapper {
-  overflow: hidden;
+.projects__swiper .swiper-container {
+  margin: 0 auto;
 }
 
 .projects__card {
-  width: 450px;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
   height: 150px;
   border: 1px solid #cacaca;
+}
+
+.projects__img {
+  margin: auto;
+  filter: grayscale(1);
 }
 
 /* CONTACTS  */
@@ -1096,13 +1106,15 @@ a {
 }
 
 .section-contacts__title {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .contacts__left {
   position: absolute;
   height: 100%;
   padding: 124px 122px 124px 160px;
+  max-width: 682px;
+  width: 100%;
   border: 1px solid #cacaca;
   background: var(--color__white);
   z-index: 1;
@@ -1114,7 +1126,7 @@ a {
 
 .contacts__adress {
   display: inline-block;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   max-width: 256px;
   font-size: 24px;
   line-height: 32px;
@@ -1127,7 +1139,7 @@ a {
 }
 
 .contacts__title {
-  margin-bottom: 19px;
+  margin-bottom: 15px;
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
@@ -1136,11 +1148,12 @@ a {
 .contacts__form {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
 }
 
 .contacts__input {
-  margin-bottom: 23px;
-  padding: 4px 97px 4px 24px;
+  margin-bottom: 22px;
+  padding: 10px 97px 10px 24px;
   border: 1px solid #333;
   border-radius: 100px;
 }
@@ -1153,8 +1166,8 @@ a {
 }
 
 .contacts__btn {
-  margin-bottom: 38px;
-  padding: 17px 35px;
+  margin-bottom: 35px;
+  padding: 17px 37px;
   align-self: start;
   font-size: 18px;
   line-height: 25px;
@@ -1172,7 +1185,7 @@ a {
 }
 
 .contacts__left-title {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
