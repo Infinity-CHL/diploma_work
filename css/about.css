@@ -1,0 +1,13 @@
+.section-about {
+    padding: 80px 0 70px 0;
+  }
+  
+  .section-about__title {
+    margin-bottom: 16px;
+  }
+  
+  .section-about__descr {
+    max-width: var(--descr__max-width);
+    font-size: 16px;
+    line-height: 2;
+  }

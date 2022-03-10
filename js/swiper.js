@@ -87,8 +87,8 @@ let projectsSwiper = new Swiper(".projects__swiper", {
   slidesPerGroup: 1,
   spaceBetween: 50,
   navigation: {
-    nextEl: ".projects__swiper-btn-next",
-    prevEl: ".projects__swiper-btn-next"
+    nextEl: ".projects__swiper-btn--next",
+    prevEl: ".projects__swiper-btn--prev"
   },
 
   breakpoints: {

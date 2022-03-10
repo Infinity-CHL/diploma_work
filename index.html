@@ -9,9 +9,21 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/libs/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
+
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/event.css">
+  <link rel="stylesheet" href="css/editions.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contacts.css">
+  <link rel="stylesheet" href="css/footer.css">
+
   <link rel="stylesheet" href="css/media.css">
 
   <title>Blanchard - художественная галерея</title>
@@ -50,14 +62,14 @@
               </li>
             </ul>
           </nav>
-          <div class="header__user-cabinet">
+          <a href="#" class="header-top__user-link header-top__link" aria-label="Ссылка для авторизации">
             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
                 fill="white" />
             </svg>
-            <a href="#" class="header-top__user-link header-top__link" aria-label="Ссылка для авторизации">Войти</a>
-          </div>
+            Войти
+          </a>
         </div>
       </div>
     </div>
@@ -67,11 +79,13 @@
           <nav class="header-bottom__nav">
             <ul class="header-bottom__list list-reset header__list">
               <li class="header-bottom__item">
-                <button class="header-bottom__btn btn-reset" id="header-btn">Реализм</button>
-                <svg class="header-bottom__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" stroke="white" />
-                </svg>
+                <button class="header-bottom__btn btn-reset" id="header-btn">
+                  Реализм
+                  <svg class="header-bottom__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6L1 1" stroke="white" />
+                  </svg>
+                </button>
                 <div class="header__dropdown" id="dropdown">
                   <ul class="header__dropdown-list list-reset" data-simplebar>
                     <li class="header__dropdown-item"
@@ -94,11 +108,13 @@
                 </div>
               </li>
               <li class="header-bottom__item">
-                <button class="header-bottom__btn btn-reset" id="header-btn">Импрессионизм</button>
-                <svg class="header-bottom__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" stroke="white" />
-                </svg>
+                <button class="header-bottom__btn btn-reset" id="header-btn">
+                  Импрессионизм
+                  <svg class="header-bottom__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6L1 1" stroke="white" />
+                  </svg>
+                </button>
                 <div class="header__dropdown" id="dropdown">
                   <ul class="header__dropdown-list list-reset" data-simplebar>
                     <li class="header__dropdown-item" style="background: url(img/header/bg-mone.jpg) no-repeat center;">
@@ -119,11 +135,13 @@
                 </div>
               </li>
               <li class="header-bottom__item">
-                <button class="header-bottom__btn btn-reset" id="header-btn">Постимпрессионизм</button>
-                <svg class="header-bottom__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" stroke="white" />
-                </svg>
+                <button class="header-bottom__btn btn-reset" id="header-btn">
+                  Постимпрессионизм
+                  <svg class="header-bottom__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6L1 1" stroke="white" />
+                  </svg>
+                </button>
                 <div class="header__dropdown" id="dropdown">
                   <ul class="header__dropdown-list list-reset" data-simplebar>
                     <li class="header__dropdown-item"
@@ -146,11 +164,13 @@
                 </div>
               </li>
               <li class="header-bottom__item">
-                <button class="header-bottom__btn btn-reset" id="header-btn">Авангард</button>
-                <svg class="header-bottom__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" stroke="white" />
-                </svg>
+                <button class="header-bottom__btn btn-reset" id="header-btn">
+                  Авангард
+                  <svg class="header-bottom__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6L1 1" stroke="white" />
+                  </svg>
+                </button>
                 <div class="header__dropdown" id="dropdown">
                   <ul class="header__dropdown-list list-reset" data-simplebar>
                     <li class="header__dropdown-item"
@@ -173,11 +193,13 @@
                 </div>
               </li>
               <li class="header-bottom__item">
-                <button class="header-bottom__btn btn-reset" id="header-btn">Футуризм</button>
-                <svg class="header-bottom__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" stroke="white" />
-                </svg>
+                <button class="header-bottom__btn btn-reset" id="header-btn">
+                  Футуризм
+                  <svg class="header-bottom__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6L1 1" stroke="white" />
+                  </svg>
+                </button>
                 <div class="header__dropdown" id="dropdown">
                   <ul class="header__dropdown-list list-reset" data-simplebar>
                     <li class="header__dropdown-item"
@@ -202,7 +224,7 @@
             </ul>
           </nav>
           <form action="" class="header-bottom__form">
-            <button type="submit" class="header-bottom__form-btn btn-reset" id="header-btn">
+            <button type="submit" class="header-bottom__form-btn btn-reset" id="header-btn" tabindex="-1">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="6.8678" height="1.71695"
                   transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
@@ -219,7 +241,9 @@
   </header>
 
   <main class="main">
+
     <h1 class="visually-hidden">Blanchard - художественная галерея</h1>
+
     <section class="section-hero">
       <div class="container">
         <div class="hero">
@@ -230,18 +254,13 @@
           </p>
           <a href="#map" class="hero__btn btn">Подписаться на рассылку</a>
         </div>
-        <!-- Slider main container -->
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide slide-1"></div>
             <div class="swiper-slide slide-2"></div>
             <div class="swiper-slide slide-3"></div>
-
           </div>
         </div>
-
       </div>
     </section>
 
@@ -267,9 +286,9 @@
           <h2 class="gallery__title section-title">Галерея</h2>
           <div class="gallery__content">
             <div class="gallery__left">
-              <label for="gallery__label" class="gallery__label" for="">Фильтр:</label>
+              <label for="gallery__label" class="gallery__label" for="gallery__select">Фильтр:</label>
               <select name="select" id="gallery__select" class="gallery__select">
-                <option placeholder>Живопись</option>
+                <option value="Живопись">Живопись</option>
                 <option value="Рисунок">Рисунок</option>
                 <option value="Скульптура">Скульптура</option>
               </select>
@@ -293,174 +312,174 @@
                 </button>
               </div>
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-1.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-1.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-2.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-2.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-3.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-3.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-4.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-4.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-5.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-5.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-6.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-6.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-7.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-7.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-8.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-8.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-9.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-9.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-10.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-10.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-11.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-11.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-12.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-12.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-13.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-13.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-14.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-14.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-15.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-15.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-16.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-16.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-17.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-17.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-18.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-18.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-19.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-19.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-20.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-20.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-21.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-21.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-22.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-22.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-23.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-23.jpg" alt="">
                   </picture>
-                </div>
-                <div class="swiper-slide">
+                </button>
+                <button class="swiper-slide btn-reset swiper-wrapper__btn">
                   <picture>
                     <source srcset="img/gallery/gallery-img-24.jpg" media="(max-width: 1920px)">
 
                     <img class="gallery-swiper__img" src="img/gallery/gallery-img-24.jpg" alt="">
                   </picture>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -475,58 +494,153 @@
           <nav class="catalog__nav">
             <ul class="catalog__list list-reset">
               <li class="catalog__item">
-                <button class="catalog__btn btn-reset">
+                <button class="catalog__btn btn-reset" data-path="france">
                   <span class="catalog__icon icon-france"></span>
                 </button>
               </li>
               <li class="catalog__item">
-                <button class="catalog__btn btn-reset">
+                <button class="catalog__btn btn-reset" data-path="germany">
                   <span class="catalog__icon icon-germany"></span>
                 </button>
               </li>
               <li class="catalog__item">
-                <button class="catalog__btn btn-reset">
+                <button class="catalog__btn btn-reset btn-active" data-path="italy">
                   <span class="catalog__icon icon-italy"></span>
                 </button>
               </li>
               <li class="catalog__item">
-                <button class="catalog__btn btn-reset">
+                <button class="catalog__btn btn-reset" data-path="russia">
                   <span class="catalog__icon icon-russia"></span>
                 </button>
               </li>
               <li class="catalog__item">
-                <button class="catalog__btn btn-reset">
+                <button class="catalog__btn btn-reset" data-path="belgium">
                   <span class="catalog__icon icon-belgium"></span>
                 </button>
               </li>
             </ul>
           </nav>
-          <p class="catalog__descr">
+          <p class="catalog__descr" data-descr="france">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia incidunt atque adipisci itaque deleniti
+            dolore, amet repellat quis numquam aperiam eligendi sed repudiandae at, fugit minus consectetur
+            necessitatibus officiis optio?
+          </p>
+          <p class="catalog__descr" data-descr="germany">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quasi excepturi aspernatur soluta architecto?
+            Eligendi dignissimos pariatur corporis officiis quaerat facilis. Deleniti excepturi tenetur debitis,
+            voluptate repudiandae delectus voluptates eum!
+          </p>
+          <p class="catalog__descr catalog__descr--active" data-descr="italy">
             Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
             политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего
             лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии
             и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть функционально разнесены
             на&nbsp;независимые элементы.
           </p>
+          <p class="catalog__descr" data-descr="russia">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, mollitia eos aliquid dicta, est
+            consequuntur quaerat vitae dignissimos ad incidunt eum vero ducimus reprehenderit. Doloremque cupiditate
+            delectus suscipit omnis dolor!
+          </p>
+          <p class="catalog__descr" data-descr="belgium">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex amet necessitatibus delectus in, nesciunt nam
+            sint? Temporibus, velit unde! Tempore, iste numquam. Molestiae quae blanditiis, dolorum ullam culpa delectus
+            magni!
+          </p>
           <div class="catalog__content catalog-content">
             <div class="catalog-content__left content-left">
-              <picture>
-                <source srcset="img/catalog/content-img.jpg" media="(max-width: 1920px)">
+              <article class="content-left__card content-left__card--active" data-artist-target="Domenico-Girlandayo">
+                <picture>
+                  <source srcset="img/catalog/content-img.jpg" media="(max-width: 1920px)">
 
-                <img src="img/catalog/content-img.jpg" alt="Картинка Художника" class="content-left__img">
-              </picture>
-              <h3 class="content-left__title">Доменико Гирландайо</h3>
-              <span class="content-left__subtitle">2&nbsp;июня 1448&nbsp;&mdash; 11&nbsp;января 1494.</span>
-              <p class="catalog-content__descr">
-                Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
-                в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых
-                выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей
-                (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
-              </p>
+                  <img src="img/catalog/content-img.jpg" alt="Картинка Художника" class="content-left__img">
+                </picture>
+                <h3 class="content-left__title">Доменико Гирландайо</h3>
+                <span class="content-left__subtitle">2&nbsp;июня 1448&nbsp;&mdash; 11&nbsp;января 1494.</span>
+                <p class="catalog-content__descr">
+                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
+                  в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых
+                  выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей
+                  (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+                </p>
+              </article>
+              <article class="content-left__card" data-artist-target="Anastasia">
+                <picture>
+                  <source srcset="img/catalog/Anastasia.jpg" media="(max-width: 1920px)">
+
+                  <img src="img/catalog/Anastasia.jpg" alt="Картинка Художника" class="content-left__img">
+                </picture>
+                <h3 class="content-left__title">Анастасия (художница)</h3>
+                <span class="content-left__subtitle">XIV - XV век</span>
+                <p class="catalog-content__descr">
+                  французская художница, специализировалась на иллюминировании рукописей. Создавала сложные декоративные
+                  обрамления (поля рукописей) и пейзажи. В её времена большинство рукописей создавалось в коммерческих
+                  мастерских, и многие художники были женщинами, вероятно, в первую очередь те, кто специализировался на
+                  оформлении окантовок, часто создававшихся не автором самой миниатюры, а другими художниками.
+                </p>
+              </article>
+              <article class="content-left__card" data-artist-target="Burgkmair">
+                <picture>
+                  <source srcset="img/catalog/burgkmair.jpg" media="(max-width: 1920px)">
+
+                  <img src="img/catalog/burgkmair.jpg" alt="Картинка Художника" class="content-left__img">
+                </picture>
+                <h3 class="content-left__title">Бургкмайр, Ханс</h3>
+                <span class="content-left__subtitle">(1473 — 1531)</span>
+                <p class="catalog-content__descr">
+                  Ханс Бургкмайр родился в 1473 году в городе Аугсбурге; происходил из семьи художников. Первоначальное
+                  обучение он прошёл у своего отца, художника Томана Бургкмайра (1444—1523).
+                  С 1488 по 1490 год Бургкмайр проходил обучение в Кольмаре в Эльзасе у Мартина Шонгауэра. Не исключено,
+                  что в годы странствий он доехал из Аугсбурга до Кёльна.
+                  Около 1507 года художник побывал в Италии, где его привлекло творчество Карло Кривелли и Витторе
+                  Карпаччо.
+                  Наряду с живописью Бургкмайр занимался ксилографией.
+                  Ханс Бургкмайр привлекался неоднократно к работам самим императором Максимилианом I (иллюстрование
+                  романа Theuerdank) и пользовался большой славой как у себя в Аугсбурге, так и за его пределами.
+                </p>
+              </article>
+              <article class="content-left__card" data-artist-target="Amvrosiy">
+                <picture>
+                  <source srcset="img/catalog/amvrosiy.jpeg" media="(max-width: 1920px)">
+
+                  <img src="img/catalog/amvrosiy.jpeg" alt="Картинка Художника" class="content-left__img">
+                </picture>
+                <h3 class="content-left__title">Амвросий</h3>
+                <span class="content-left__subtitle">ок. 1494 года ...</span>
+                <p class="catalog-content__descr">
+                  Ювелирные работы Амвросия выполнены в технике литья, гравировки и скани. В своих работах он сочетал резьбу по дереву и ювелирные приёмы, а также вводил в сканый узор цветную мастику, которая заполняла узор. Эта техника очень похожа на технику перегородчатой эмалировки. Также он использовал технику прорезного рельефа на золотом фоне. В основном же Амвросий следует в своём творчестве «рублевским» традициям того времени.
+                  Амвросий соединил в своих работах западные навыки с традиционно русским орнаментом и оказал огромное влияние на развитие искусства XV—XVI века. Амвросий создал так называемую «школу Амвросия», традициям которой следовали не только резчики в Троице-Сергиевом монастыре, но и мастера за его пределами.
+                </p>
+              </article>
+              <article class="content-left__card" data-artist-target="Robert-Van">
+                <picture>
+                  <source srcset="img/catalog/robert.jpeg" media="(max-width: 1920px)">
+
+                  <img src="img/catalog/robert.jpeg" alt="Картинка Художника" class="content-left__img">
+                </picture>
+                <h3 class="content-left__title">Ауденарде,
+                  Роберт ван</h3>
+                <span class="content-left__subtitle">(1663 - 1748)</span>
+                <p class="catalog-content__descr">
+                  Роберт ван Ауденарде родился в 1663 году в городе Генте. Был первым учеником Фрэнсиса ван Мирхопа, затем учился у Ганса ван Клифа. Для монастыря в родном городе исполнил картину «Явление апостола Петра монаху, задумавшему покинуть свою обитель», а также писал портреты.
+                  В своих гравюрах он в значительной степени прибегал к подготовке травлением и уже затем оканчивал работу ловким, плавным резцом.
+                </p>
+              </article>
+              <article class="content-left__card" data-artist-target="plug">
+                <picture>
+                  <source srcset="img/catalog/plug.jpg" media="(max-width: 1920px)">
+
+                  <img src="img/catalog/plug.jpg" alt="Картинка Художника" class="content-left__img">
+                </picture>
+                <h3 class="content-left__title">Что мы о нём знаем?</h3>
+                <span class="content-left__subtitle">Пока ничего... Зато мы точно знаем, что в галерее есть на что
+                  посмотреть!</span>
+                <a href="#gallery" class="catalog-content__descr">В галерею</a>
+              </article>
             </div>
-            <div class="catalog-content__right">
-              <ul class="catalog-content__list list-reset" id="accordion">
+            <div class="catalog-content__right" data-target="france">
+              <ul class="catalog-content__list list-reset">
                 <li class="catalog-content__item">
                   <div class="catalog-content__accordion-top">
                     <h3 class="catalog-content__accordion-header">C&nbsp;1400 по&nbsp;1499&nbsp;гг.</h3>
@@ -539,76 +653,14 @@
                   <div class="catalog-content__accordion-bottom">
                     <ul class="catalog-content__accordion-list list-reset">
                       <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Бенедетто ди Биндо</a>
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="Anastasia">Анастасия
+                          (художница)</a>
                       </li>
                       <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Бергоньоне, Амброджо</a>
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Бартелеми д’Эйк</a>
                       </li>
                       <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Биссоло, Франческо</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Больтраффио, Джованни</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Бонсиньори, Франческо</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Боттичини, Рафаэлло</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Брамантино</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Бреа, Людовико</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Бьяджо д’Антонио Туччи</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Веккьетта</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Андреа Верроккьо</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Доменико Гирландайо</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Беноццо Гоццоли</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Граначчи, Франческо</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Грегорио ди Чекко</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Джованни да Удине</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Джованни ди Паоло</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Джорджоне</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Парентино, Бернардо</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Пезеллино</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Пьетро Перуджино</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Перуцци, Бальдассаре</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Пизанелло</a>
-                      </li>
-                      <li class="catalog-content__accordion-item">
-                        <a href="#" class="catalog-content__accordion-link">Пинтуриккьо</a>
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Домбе, Гийом</a>
                       </li>
                     </ul>
                   </div>
@@ -623,9 +675,13 @@
                     </button>
                   </div>
                   <div class="catalog-content__accordion-bottom">
-                    <ul class="catalog-content__accordion-list list-reset">
-                      <li class="catalog-content__accordion-item"></li>
-                    </ul>
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-content__item">
@@ -638,9 +694,13 @@
                     </button>
                   </div>
                   <div class="catalog-content__accordion-bottom">
-                    <ul class="catalog-content__accordion-list list-reset">
-                      <li class="catalog-content__accordion-item"></li>
-                    </ul>
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-content__item">
@@ -653,9 +713,13 @@
                     </button>
                   </div>
                   <div class="catalog-content__accordion-bottom">
-                    <ul class="catalog-content__accordion-list list-reset">
-                      <li class="catalog-content__accordion-item"></li>
-                    </ul>
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-content__item">
@@ -668,9 +732,13 @@
                     </button>
                   </div>
                   <div class="catalog-content__accordion-bottom">
-                    <ul class="catalog-content__accordion-list list-reset">
-                      <li class="catalog-content__accordion-item"></li>
-                    </ul>
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-content__item">
@@ -683,9 +751,13 @@
                     </button>
                   </div>
                   <div class="catalog-content__accordion-bottom">
-                    <ul class="catalog-content__accordion-list list-reset">
-                      <li class="catalog-content__accordion-item"></li>
-                    </ul>
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-content__item">
@@ -698,9 +770,647 @@
                     </button>
                   </div>
                   <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog-content__right" data-target="germany">
+              <ul class="catalog-content__list list-reset">
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1400 по&nbsp;1499&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
                     <ul class="catalog-content__accordion-list list-reset">
-                      <li class="catalog-content__accordion-item"></li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="Burgkmair">Бургкмайр,
+                          Ханс</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Виц, Конрад</a>
+                      </li>
                     </ul>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1500 по&nbsp;1599&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1600 по&nbsp;1699&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1700 по&nbsp;1799&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1800 по&nbsp;1899&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1900 по&nbsp;1999&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;2000&nbsp;г.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog-content__right catalog-content__right--active" data-target="italy">
+              <ul class="catalog-content__list list-reset">
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1400 по&nbsp;1499&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <ul class="catalog-content__accordion-list list-reset">
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Бенедетто ди
+                          Биндо</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Бергоньоне,
+                          Амброджо</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Биссоло,
+                          Франческо</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Больтраффио,
+                          Джованни</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Бонсиньори,
+                          Франческо</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Боттичини,
+                          Рафаэлло</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Брамантино</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Бреа, Людовико</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Бьяджо д’Антонио
+                          Туччи</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Веккьетта</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Андреа Верроккьо</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link"
+                          data-artist-path="Domenico-Girlandayo">Доменико Гирландайо</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Беноццо Гоццоли</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Граначчи,
+                          Франческо</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Грегорио ди
+                          Чекко</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Джованни да
+                          Удине</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Джованни ди
+                          Паоло</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Джорджоне</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Парентино,
+                          Бернардо</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Пезеллино</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Пьетро Перуджино</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Перуцци,
+                          Бальдассаре</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Пизанелло</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Пинтуриккьо</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1500 по&nbsp;1599&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1600 по&nbsp;1699&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1700 по&nbsp;1799&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1800 по&nbsp;1899&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1900 по&nbsp;1999&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;2000&nbsp;г.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog-content__right" data-target="russia">
+              <ul class="catalog-content__list list-reset">
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1400 по&nbsp;1499&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <ul class="catalog-content__accordion-list list-reset">
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="Amvrosiy">Амвросий</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Андрей Рублёв</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1500 по&nbsp;1599&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1600 по&nbsp;1699&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1700 по&nbsp;1799&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1800 по&nbsp;1899&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1900 по&nbsp;1999&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;2000&nbsp;г.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog-content__right" data-target="belgium">
+              <ul class="catalog-content__list list-reset">
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1400 по&nbsp;1499&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <ul class="catalog-content__accordion-list list-reset">
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="Robert-Van">Ауденарде,
+                          Роберт ван</a>
+                      </li>
+                      <li class="catalog-content__accordion-item">
+                        <a href="#" class="catalog-content__accordion-link" data-artist-path="plug">Бош, Эжен</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1500 по&nbsp;1599&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1600 по&nbsp;1699&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1700 по&nbsp;1799&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1800 по&nbsp;1899&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;1900 по&nbsp;1999&nbsp;гг.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-content__item">
+                  <div class="catalog-content__accordion-top">
+                    <h3 class="catalog-content__accordion-header">C&nbsp;2000&nbsp;г.</h3>
+                    <button class="catalog-content__accordion-btn btn-reset">
+                      <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="black" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="catalog-content__accordion-bottom">
+                    <div class="plug">
+                      <h4 class="plug__title">Здесь пока пусто</h4>
+                      <p class="plug__descr">
+                        А в галерее вы всегда можете найти что-то интересное для себя
+                      </p>
+                      <a href="#gallery" class="plug__link">В галерею</a>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -1101,51 +1811,54 @@
               </span>
             </span>
             предпосылок. Банальные, но&nbsp;неопровержимые выводы, а также
-            представители&nbsp;современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою
+            представители&nbsp;современных социальных резервов призывают нас к&nbsp;новым свершениям, которые,
+            в&nbsp;свою
             очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной неузнаваемости.
             Подробнее: <a href="#" class="projects__link">blanchard-art.ru/projects/about</a>
           </p>
-          <h3 class="projects__subtitle">Партнёры проектов:</h3>
-          <div class="projects__swiper">
+          <div class="projects__partners">
+            <h3 class="projects__subtitle">Партнёры проектов:</h3>
             <div class="projects__swiper-btns">
               <button class="projects__swiper-btn projects__swiper-btn--prev btn-reset">
                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 11L0.999995 6L6 0.999998" stroke="white" />
                 </svg>
               </button>
-              <button class="projects__swiper-btn projects__swiper-btn--prev btn-reset">
+              <button class="projects__swiper-btn projects__swiper-btn--next btn-reset">
                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 11L6.00001 6L1 0.999997" stroke="white" />
                 </svg>
               </button>
             </div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide projects__card">
-                <img class="projects__img" src="img/projects/slide-1.png" alt="Логотип партнёр проекта">
-              </div>
-              <div class="swiper-slide projects__card">
-                <img class="projects__img" src="img/projects/slide-2.png" alt="Логотип партнёр проекта">
-              </div>
-              <div class="swiper-slide projects__card">
-                <img class="projects__img" src="img/projects/slide-3.png" alt="Логотип партнёр проекта">
-              </div>
-              <div class="swiper-slide projects__card">
-                <img class="projects__img" src="img/projects/slide-4.png" alt="Логотип партнёр проекта">
-              </div>
-              <div class="swiper-slide projects__card">
-                <img class="projects__img" src="img/projects/slide-5.png" alt="Логотип партнёр проекта">
-              </div>
-              <div class="swiper-slide projects__card">
-                <img class="projects__img" src="img/projects/slide-6.png" alt="Логотип партнёр проекта">
-              </div>
-              <div class="swiper-slide projects__card">
-                <img class="projects__img" src="img/projects/slide-7.png" alt="Логотип партнёр проекта">
-              </div>
-              <div class="swiper-slide projects__card">
-                <img class="projects__img" src="img/projects/slide-8.png" alt="Логотип партнёр проекта">
-              </div>
-              <div class="swiper-slide projects__card">
-                <img class="projects__img" src="img/projects/slide-9.png" alt="Логотип партнёр проекта">
+            <div class="projects__swiper">
+              <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide projects__card">
+                  <img class="projects__img" src="img/projects/slide-1.png" alt="Логотип партнёр проекта">
+                </a>
+                <a href="#" class="swiper-slide projects__card">
+                  <img class="projects__img" src="img/projects/slide-2.png" alt="Логотип партнёр проекта">
+                </a>
+                <a href="#" class="swiper-slide projects__card">
+                  <img class="projects__img" src="img/projects/slide-3.png" alt="Логотип партнёр проекта">
+                </a>
+                <a href="#" class="swiper-slide projects__card">
+                  <img class="projects__img" src="img/projects/slide-4.png" alt="Логотип партнёр проекта">
+                </a>
+                <a href="#" class="swiper-slide projects__card">
+                  <img class="projects__img" src="img/projects/slide-5.png" alt="Логотип партнёр проекта">
+                </a>
+                <a href="#" class="swiper-slide projects__card">
+                  <img class="projects__img" src="img/projects/slide-6.png" alt="Логотип партнёр проекта">
+                </a>
+                <a href="#" class="swiper-slide projects__card">
+                  <img class="projects__img" src="img/projects/slide-7.png" alt="Логотип партнёр проекта">
+                </a>
+                <a href="#" class="swiper-slide projects__card">
+                  <img class="projects__img" src="img/projects/slide-8.png" alt="Логотип партнёр проекта">
+                </a>
+                <a href="#" class="swiper-slide projects__card">
+                  <img class="projects__img" src="img/projects/slide-9.png" alt="Логотип партнёр проекта">
+                </a>
               </div>
             </div>
           </div>
@@ -1183,7 +1896,7 @@
                 </svg>
               </a>
             </li>
-            <li class="contacts__left-itsem">
+            <li class="contacts__left-item">
               <a href="#" class="contacts__left-link">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1204,9 +1917,7 @@
             </li>
           </ul>
         </div>
-        <div class="contacts__right">
-          <div id="map" style="width: 1920px; height: 700px"></div>
-        </div>
+        <div id="map" class="contacts__right-map"></div>
       </div>
     </section>
   </main>
@@ -1256,17 +1967,19 @@
   </footer>
 
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript"></script>
-  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="js/choices.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/dropdown.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/swiper.js"></script>
+  <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script defer src="js/libs/choices.min.js"></script>
+  <script defer src="js/script.js"></script>
+  <script defer src="js/dropdown.js"></script>
+  <script defer src="js/map.js"></script>
+  <script defer src="js/swiper.js"></script>
+  <script defer src="js/events.js"></script>
+  <script defer src="js/tabs.js"></script>
 </body>
 
 </html>

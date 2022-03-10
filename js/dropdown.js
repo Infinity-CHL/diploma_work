@@ -1,5 +1,3 @@
-// Выпадающие списки
-
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("#header-btn").forEach(item => {
     item.addEventListener("click", function () {
@@ -18,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       })
       dropdown.classList.toggle("dropdown-active");
+      btn.classList.toggle("header-bottom__btn--active");
     })
   })
 
@@ -27,6 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll(".header__dropdown").forEach(el => {
         el.classList.remove("dropdown-active");
       })
+      
+      document.querySelectorAll(".header-bottom__btn").forEach(el => {
+        el.classList.remove("header-bottom__btn--active");
+      })
     }
   })
-})
+});
